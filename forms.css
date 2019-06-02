@@ -1,0 +1,128 @@
+/*
+   Registration Forms Style Sheet
+   Author: Team 5
+   Date: 10/28/2015  
+
+   Filename:         forms.css
+   Supporting Files: customer.png, go.png, stop.png
+
+*/
+
+/* Field set Styles */
+
+fieldset {
+    background-color: rgb(255, 246, 205);
+    border: 1px solid rgb(233, 69, 0);
+    float: left;
+    margin: 10px 0px 10px 2.5%;
+    width: 46%;
+}
+
+fieldset#submitForm{
+    margin: 25px 0px 10px 2.5%;
+}
+
+/* Legend Styles */
+
+legend {
+    background-color: rgb(233, 69, 0);
+    color: white;
+    padding: 3px 0px;
+    text-indent: 5px;
+    width: 100%;
+}
+
+/* Label Styles */
+
+label {
+    clear: left;
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px 4% 7px 5px;
+    width: 40%;
+}
+
+/* Input Control Styles */
+
+input {
+    display: block;
+    float: left;
+    font-size: 0.9em;
+    margin: 7px 0px;
+    width: 50%;
+}
+
+input#stateFather{
+    width: 50px;
+}
+
+input#stateMother{
+    width: 50px;
+}
+
+input#playerAge{
+    width: 50px;
+}
+
+input#playerHeightFeet{
+    width: 50px;
+}
+
+input#playerHeightInches{
+    width: 50px;
+}
+
+input#playerWeight{
+    width: 50px;
+}
+
+input#number{
+    width: 50px;
+}
+
+input#sameAddrCB{
+    float: right;
+    margin: 10px 232px 0px 0px;
+    width: 20px;
+}
+label#addressSameAsFather{
+}
+
+input[type="submit"]{
+    width: 100px;
+    float: left;
+    margin-left: 100px;
+}
+
+input[type="reset"]{
+    width: 100px;
+    float: right;
+    margin-right: 100px;
+}
+
+/* Validation Styles */
+
+input:focus, select:focus, textarea:focus{
+    background-color: rgb(220, 255, 220);
+}
+
+input:focus:valid{
+    background: rgb(220, 255, 220) url(go.png) bottom right no-repeat;
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;   
+}
+
+input:focus:invalid{
+    background: rgb(255, 232, 233) url(stop.png) bottom right no-repeat;
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;   
+}
+#teamName{float:left;
+}
+#fieldPosition{float:left;
+}

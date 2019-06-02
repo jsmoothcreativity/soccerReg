@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+   <!--
+      Author: Team 5
+      Date:   10/28/2015
+
+      Filename:         registration.htm
+      Supporting files: customer.png, forms.css, formsubmit.js, go.png,
+                        modernizr-1.5.js, rb.css, badge.png,
+                        stop.png
+
+   -->
+
+      <meta charset="UTF-8" />
+      <title>Soccer Camp Registration Form</title>
+      <script src="modernizr-1.5.js"></script>
+      <script src="formsubmit.js"></script>
+
+      <link href="rb.css" rel="stylesheet" />
+      <link href="forms.css" rel="stylesheet" />
+
+   </head>
+
+   <body>
+
+      <header>
+         <img src="badge.png" alt="Badge" />
+         
+         <nav>
+            <ul>
+               <li><a href="registration.htm">Home</a></li>
+               <li><a href="payment.html">Pay On-line</a></li>              
+            </ul>
+         </nav>
+      
+         <article>
+            <h1><br>Registration Form</h1>
+            <p>Thank you for your interest in becoming a part of our</br>
+               soccer youth academy. Please, complete this quick</br>
+                registration form to register your kid in</br>
+                Jsmooth Soccer Camp.
+            </p>
+         </article>
+      </header>
+
+   <section>
+      <p>Required values are marked by an asterisk (*)</p>
+
+      <form id="registration" name="registration"
+            action="indexRegistration.php"
+            method="post">
+
+          <fieldset id="generalInfo">
+              <legend>Player's Parent Information</legend>
+
+              <label for="fatherFirstName"> Father Name * </label>
+              <input name="fatherFirstName" id="fatherFirstName" required="required" />
+
+              <label for="fatherLastName"> Father Last Name * </label>
+              <input name="fatherLastName" id="fatherLastName" required="required" />
+
+              <label for="streetFather"> Street address  * </label>
+              <input name="streetFather" id="streetFather" required="required" />
+
+              <label for="cityFather"> City * </label>
+              <input name="cityFather" id="cityFather" required="required" />
+
+              <label for="stateFather"> State (abbr.) * </label>
+              <input name="stateFather" id="stateFather" placeholder="FL" required="required" />
+
+              <label for="postalCodeFather"> Postal code * </label>
+              <input name="postalCodeFather" id="postalCodeFather" required="required" placeholder="nnnnn (-nnnn)" pattern="^\d{5}(\-\d{4})?$" />
+
+              <label for="phoneFather"> Phone number * </label>
+              <input name="phoneFather" id="phoneFather" placeholder="(nnn) nnn-nnnn"
+                     type="text" required="required" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+
+              <label for="emailFather"> E-mail * </label>
+              <input name="emailFather" id="emailFather" type="email" required="required" />
+
+              <label for="motherFirstName"> Mother Name * </label>
+              <input name="motherFirstName" id="fatherFirstName" required="required" />
+
+              <label for="motherLastName"> Mother Last Name * </label>
+              <input name="motherLastName" id="motherLastName" required="required" />
+
+              <label for="streetMother"> Street address  * </label>
+              <input name="streetMother" id="streetMother" required="required" />
+
+              <label for="cityMother"> City * </label>
+              <input name="cityMother" id="cityMother" required="required" />
+
+              <label for="stateMother"> State (abbr.) * </label>
+              <input name="stateMother" id="stateMother" placeholder="FL" required="required" />
+
+              <label for="postalCodeMother"> Postal code * </label>
+              <input name="postalCodeMother" id="postalCodeMother" required="required" placeholder="nnnnn (-nnnn)" pattern="^\d{5}(\-\d{4})?$" />
+
+              <label for="addressSameAsFather" id="addressSameAsFather"> Mother's address same as father's. </label>
+              <input type="checkbox" name="sameAddrCB" id="sameAddrCB" />
+              
+              <label for="phoneMother"> Phone number * </label>
+              <input name="phoneMother" id="phoneMother" placeholder="(nnn) nnn-nnnn"
+                     type="text" required="required" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+
+              <label for="emailMother"> E-mail * </label>
+              <input name="emailMother" id="emailMother" type="email" required="required" />
+
+          </fieldset>
+
+          <fieldset id="playerInfo">
+              <legend>Player's Information</legend>
+
+              <label for="playerFirstName"> Player Name * </label>
+              <input name="playerFirstName" id="playerFirstName" required="required" />
+
+              <label for="playerLastName"> Player Last Name * </label>
+              <input name="playerLastName" id="playerLastName" required="required" />
+
+              <label for="playerAge"> Age  * </label>
+              <input name="playerage" id="playerAge" required="required" />
+
+              <label for="playerHeightFeet"> Height Feet * </label>
+              <input name="playerHeightFeet" id="playerHeightFeet" required="required" />
+
+              <label for="playerHeightInches"> Height Inches * </label>
+              <input name="playerHeightInches" id="playerHeightInches" required="required" />
+
+              <label for="playerWeight"> Weight * </label>
+              <input name="playerWeight" id="playerWeight" required="required" />
+
+              <label for="playerDoctor"> Doctor * </label>
+              <input name="playerDoctor" id="playerDoctor" required="required" />
+
+              <label for="teamName"> Team Name * </label>
+              <select name="teamName" id="teamName"> 
+              		   <option value="teamOne">Team One</option>
+ 					   <option value="teamTwo">Team Two</option>
+ 					   <option value="TeamThree">Team Three</option>
+  					   <option value="teamFour">Team Four</option>
+  					   <option value="teamFive">Team Five</option>
+  					   <option value="teamSix">Team Six</option>
+  					   <option value="teamSeven">Team Seven</option>
+			   </select>
+  <option></option>
+</select>
+
+              <label for="coachName"> Coach Name * </label>
+              <input name="coachName" id="coachName" required="required" />
+
+             <!-- <label for="player"> Player's experience * </label>
+              <input name="player" id="player" /> -->
+
+              <label for="number"> Number </label>
+              <input name="number" id="number" />
+
+              <label for="fieldPosition"> Field Position </label>
+              <select name="fieldPosition" id="fieldPosition"> 
+              		   <option value="goalKeeper">Goalies</option>
+ 					   <option value="fullbacks">Fullbacks</option>
+ 					   <option value="wingFullbacks">Wing Fullbacks</option>
+  					   <option value="midField">Midfields</option>
+  					   <option value="teamFive">forwards</option>
+			   </select>
+		<!-- team comprises of 22 players, 11 starters and 11 reserves. formation is as followed: 
+			1 goallie, 3 fullbaks, 2 wing fullbacks, 3 midfielders, and 2 forwards/-->
+          </fieldset>
+
+          <fieldset id="submitForm">
+
+              <p>Please, take some time to review your form.<br>
+                 If needed, make the necessary corrections<br>
+                 After the form is submitted, you will have the<br>
+                 option to mail in your payment, pay in person<br>
+                 at our office, or use our secure payment option.
+
+                 <input type="submit" value="Submit Form" name="submit" id="submit"/>
+                 <input type="reset" value="Cancel" name="reset" id="reset" />
+              </p>
+
+
+        
+        </fieldset>
+
+       </form>
+
+   </section>
+
+   <footer>
+      <address>
+         Jsmooth Soccer Camp &bull;
+         123 No street name &bull;
+         NoCity, NoState  12345 &bull;
+         (123) 456 - 7890 
+      </address>
+   </footer>
+
+   </body>
+
+</html>
